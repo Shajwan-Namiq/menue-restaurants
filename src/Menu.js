@@ -25,7 +25,7 @@ const Menu = ({ items }) => {
 
                 <div class="flex flex-col py-6 lg:mx-6">
                  
-                  <div className='flex justify-between'>
+                  <div className='flex justify-between lg:border-b-2'>
                     <div class="text-xl font-semibold text-green-600   ">
                       {title}
                     </div>
@@ -42,7 +42,7 @@ const Menu = ({ items }) => {
           </div>
         </section>
       </div>
-      ;
+      
     </>
   );
 
