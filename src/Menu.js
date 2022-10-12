@@ -15,27 +15,27 @@ const Menu = ({ items }) => {
             <>
               <div
                 key={id}
-                class="bg-[#dad7cd] transform transition duration-500 hover:scale-110 "
+                className="bg-[#dad7cd] transform transition duration-500 hover:scale-110 "
               >
-                <div class="flex">
+                <div className="flex">
                   <img
-                    class="  transition duration-500 hover:-scale-x-90  object-cover w-36 h-36  lg:w-56 lg:h-56 rounded-lg "
+                    className="  transition duration-500 hover:-scale-x-90  object-cover w-36 h-36  lg:w-56 lg:h-56 rounded-lg "
                     src={img}
                     alt={title}
                   />
 
-                  <div class="flex flex-col py-6 mx-2 lg:mx-6">
+                  <div className="flex flex-col py-6 mx-2 lg:mx-6">
                     <div className="flex justify-between lg:border-b-2">
-                      <div class="text-xl font-semibold text-green-600   ">
+                      <div className="text-xl font-semibold text-green-600   ">
                         {title}
                       </div>
 
-                      <div class="text-xl font-semibold text-green-600   ">
+                      <div className="text-xl font-semibold text-green-600   ">
                         ${price}
                       </div>
                     </div>
 
-                    <div class="mt-2 text-sm text-gray-700 ">{desc}</div>
+                    <div className="mt-2 text-sm text-gray-700 ">{desc}</div>
                   </div>
                 </div>
               </div>

@@ -3,7 +3,7 @@ import React from 'react'
 const Categories = ({ categories,filterItems }) => {
   return (
     <div>
-      <nav class="flex justify-center space-x-4 mt-10 ">
+      <nav className="flex justify-center space-x-4 mt-10 ">
         {categories.map((category, index) => {
           return (
             <div className="border rounded-lg">
@@ -18,8 +18,6 @@ const Categories = ({ categories,filterItems }) => {
             </div>
           );
         })}
-
-         
       </nav>
     </div>
   );
