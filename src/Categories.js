@@ -1,40 +1,28 @@
 import React from 'react'
 
-const Categories = ({ filterItems }) => {
-
+const Categories = ({ categories,filterItems }) => {
   return (
     <div>
-      <nav class="flex justify-center space-x-4">
-        <button
-          onClick={() => filterItems("all")}
-          class="font-med px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
-        >
-          all
-        </button>
-        <button
-          onClick={() => filterItems("breakfast")}
-          class="font-med px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
-        >
-          breakfast
-        </button>
+      <nav class="flex justify-center space-x-4 mt-10 ">
+        {categories.map((category, index) => {
+          return (
+            <div className="border rounded-lg">
+              <button
+                type="button"
+                className="outline-none focus:shadow-outline  font-bold px-3 py-2 text-[#344e41] rounded-lg hover:bg-[#dad7cd] hover:text-[#1e3222]"
+                key={index}
+                onClick={() => filterItems(category)}
+              >
+                {category}
+              </button>
+            </div>
+          );
+        })}
 
-        <button
-          onClick={() => filterItems("lunch")}
-          class="font-med px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
-        >
-          lunch
-        </button>
-
-        <button
-          onClick={() => filterItems("shakes")}
-          class="font-med px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
-        >
-          shakes
-        </button>
+         
       </nav>
     </div>
-  ); 
-  
+  );
 };
 
 export default Categories
