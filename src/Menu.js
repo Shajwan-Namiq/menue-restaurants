@@ -15,11 +15,11 @@ const Menu = ({ items }) => {
             <>
               <div
                 key={id}
-                className="bg-[#dad7cd] rounded-lg transform transition duration-500 hover:scale-110 h-40 lg:h-56 "
+                className="bg-[#dad7cd] rounded-lg transform transition duration-500 hover:scale-110    "
               >
-                <div className="flex">
+                <div className="lg:flex">
                   <img
-                    className="transition duration-500 hover:-scale-x-90  object-cover w-36 h-40  lg:w-56 lg:h-56 rounded-lg "
+                    className="transition duration-500 hover:-scale-x-90  object-cover w-full h-56  lg:w-56 lg:h-56 rounded-lg "
                     src={img}
                     alt={title}
                   />
