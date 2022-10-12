@@ -71,5 +71,6 @@ const menu = [
     img: "https://images.unsplash.com/photo-1571183911579-687725adb5f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=418&q=80",
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
+  
 ];
 export default menu;
