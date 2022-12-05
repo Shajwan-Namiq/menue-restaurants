@@ -1,3 +1,23 @@
  body {
      background-color: #cad2c5;
  }
+ 
+ .job-btn {
+     color: green;
+     background-color: red;
+     background: transparent;
+     border-color: transparent;
+     text-transform: capitalize;
+     font-size: 1.25rem;
+     margin: 0 0.5rem;
+     cursor: pointer;
+     padding: 0.25rem 0;
+     line-height: 1;
+ }
+ 
+ .active-btn {
+     color: green;
+     background-color: white;
+     padding: 5px;
+     border-radius: 5px;
+ }
